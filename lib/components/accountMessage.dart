@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../login.dart';
 import '../singUp.dart';
 
 class accountMessage extends StatelessWidget {
@@ -19,8 +20,8 @@ class accountMessage extends StatelessWidget {
             );
           }
           else{
-            // Navigator.of(context).push(MaterialPageRoute(builder:(context)=>const login()));
-            Navigator.pop(context);
+            Navigator.of(context).push(MaterialPageRoute(builder:(context)=>const login()));
+            // Navigator.pop(context);
           }
         }, 
           child: Text(currentPage == 'login' ? "sign up" : "sign in")
